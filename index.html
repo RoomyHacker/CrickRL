@@ -27,8 +27,22 @@
             font-size: 1em;
             margin: 5px;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
+            background: linear-gradient(45deg, #ff6b6b, #f94d6f);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background: linear-gradient(45deg, #f94d6f, #ff6b6b);
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        button:active {
+            transform: scale(1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         .score-board, .coin-flip {
             border: 1px solid #ccc;
@@ -78,7 +92,7 @@
         </div>
     </div>
     <footer>
-        Credit: Prayash Dahal
+        Made By: Prayash Dahal
     </footer>
 
     <script>
